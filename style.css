@@ -29,11 +29,23 @@ nav { position: fixed; top: 0; width: 100%; padding: 20px 50px; display: flex; j
 
 /* Grid de Projetos */
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
-.card { background: var(--card-bg); padding: 30px; border-radius: 15px; border: 1px solid #30363d; transition: transform 0.3s; display: flex; flex-direction: column; height: 100%; }
-.card > div:last-child { margin-top: auto !important; }
+
+.card { 
+    background: var(--card-bg); 
+    padding: 30px; 
+    border-radius: 15px; 
+    border: 1px solid #30363d; 
+    transition: transform 0.3s; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+}
+
 .card:hover { transform: translateY(-10px); border-color: var(--primary-color); }
 .card h3 { color: var(--white); margin-bottom: 15px; }
-.tags { margin: 15px 0; }
+
+/* Empurra o container de tags para baixo, ocupando o espaço vazio */
+.tags { margin: 15px 0 auto 0; } 
 .tags span { background: #21262d; color: var(--primary-color); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem; margin-right: 5px; }
 
 /* Placeholder de Vídeo */
